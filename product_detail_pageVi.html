@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Compiled and minified jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css\product.css">
+</head>
+<body onload="javascript:getPageUrlId(),productsDetailVi(),Carousel();">
+    <div class="container">
+        <header>
+            <ul class="nav nav-tabs">
+                <li class="dropdown">
+                    <a href="" data-toggle="dropdown">KÍNH ÁP TRÒNG<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="brandVi.html?key1=a">AirOptix</a></li>
+                        <li><a href="brandVi.html?key1=c">Chromaview</a></li>
+                        <li><a href="brandVi.html?key1=e">Eyefusion</a></li>
+                        <li><a href="brandVi.html?key1=f">FreshLook</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="" data-toggle="dropdown">Language<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="languageEngProducts()">English</a></li>
+                        <li><a href="#" onclick="languageViProducts()">Tiếng Việt</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <br>
+        <br>
+        <br>
+        <div id="get_data">
+        </div>
+    <div class="row" id="similarProduct"></div>
+    </div>
+    <script src="js/products.js"></script>
+</body>
+</html>

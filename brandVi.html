@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    
+    <link rel="stylesheet" href="css\product.css">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Compiled and minified jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/products.js"></script>
+</head>
+<body onload="javascript:getPageUrlId(),showBanner(),brandProductsVi()">
+    <div class="container">
+        <header>
+            <ul class="nav nav-tabs">
+                <li class="dropdown">
+                    <a href="" data-toggle="dropdown">KÍNH ÁP TRÒNG<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="brandVi.html?key1=a">AirOptix</a></li>
+                        <li><a href="brandVi.html?key1=c">Chromaview</a></li>
+                        <li><a href="brandVi.html?key1=e">Eyefusion</a></li>
+                        <li><a href="brandVi.html?key1=f">FreshLook</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="" data-toggle="dropdown">Language<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="languageEngBrand()">English</a></li>
+                        <li><a href="#" onclick="languageViBrand()">Tiếng Việt</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>      
+        <div style="text-align: center;" id="banner">
+        </div>
+        <div class="headrow">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                <div style="height: 30px;font-size: large;margin-top: 10px;" class="search">
+                    <label for="searchVi">Tìm kiếm</label><input type="text" id="searchVi" style="width: 250px;">  <span class="glyphicon glyphicon-search " onclick="searchProduct()"></span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                <select name="" id="selectVi" style="height: 30px;font-size: large;margin-top: 10px;" class="sort">
+                    <option value="">--------Sắp xếp theo--------</option>
+                    <option value="latest">Mới Nhất</option>
+                    <option value="name">Tên</option>
+                    <option value="colorVi">Màu sắc</option>
+                    <option value="priceL">Giá-thấp đến cao</option>
+                    <option value="priceH">Giá-cao đến thấp</option>
+                    <option value="rating">Yêu thích</option>
+                </select>
+            </div>
+        </div>
+        <div class="row" id="brand_data"></div>
+        <div class="other_brand container">
+            <h1>Tất cả thương hiệu</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                    <a href="brandVi.html?key1=a" class="brandLink" style="text-decoration: none;">Air Optix Color</a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="brandVi.html?key1=c" class="brandLink" style="text-decoration: none;">Chromaview</a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="brandVi.html?key1=e" class="brandLink" style="text-decoration: none;">Eye Fusion</a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="brandVi.html?key1=f" class="brandLink" style="text-decoration: none;">Freshlook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var elem = document.getElementById("searchVi");
+    elem.onkeyup = function(e){
+    if(e.keyCode == 13){
+        searchProductVi()
+    }
+}
+</script>
+</body>
+</html>

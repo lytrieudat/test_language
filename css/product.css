@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+p
+{
+  color: gray;
+  font-size: 16px;
+}
+.divImage 
+{
+    text-align: center;
+    width: 220px;
+    height: 350px;
+    padding:1px;
+}
+
+.productsImage 
+{
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
+
+.productsImage:hover
+{
+  transition: all 0.5s ease-out;
+  transform: scale(1.1);
+}
+.name_product
+{
+  font-size: 30px;
+}
+.price_product
+{
+  font-size: 20px;
+  color: red;
+}
+.product-gallery {
+    display: flex;
+    flex-direction: row;
+  }
+.other_brand h1{
+    text-align: center;
+    font-weight: bold;
+}   
+.product-gallery-featured img
+  {
+    width: 300px;
+  }
+
+  .product-gallery-thumbnails .thumbnails-list li {
+    margin-bottom: 5px;
+    position: relative;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .thumbnails-list li img {
+    display: block;
+    width: 100%;
+  }
+  
+  .product-gallery-thumbnails .thumbnails-list li:hover::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #007bff;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .name_product{
+    font-size: 15px;
+    font-weight: bold;
+}
+.small_name{
+  font-size: 35px;
+
+}
+.price{
+  font-size: 20px;
+}
+.color{
+  font-size: 20px;
+}
+.color span{
+  font-weight: bold;
+  font-size: 23px;
+}
+.product_promotion{
+  font-size: 20px;
+}
+.product_promotion ul li{
+  margin-left: 30px;
+  list-style:circle;
+}
+
+/* p{
+  width: auto;
+} */
+td{
+  border: solid;
+  padding: 10px;
+}
+.similar_product img{
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+.name_similar,.price_similar{
+  text-align: center;
+}
+.name_similar{
+  font-size: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.price_similar{
+  font-size: 15px;
+  color: red;
+}
+.divImage1
+{
+  text-align: center;
+  padding:1px;
+  margin: auto;
+}
+.productsImage1
+{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    transition: transform 0.5s;
+}
+
+.divImage1:hover
+{
+    transform: translateY(-5px);
+}
+/* .row>div{
+  border:solid;
+} */
+.container{
+  max-width: 1280px;
+}
+
+/*comment rating */
+p1
+{
+  color: #FFD700;
+}
+label{margin:0;padding:0;}
+#rating{margin:0;padding:0;}
+body{margin:20px;}
+h1{font-size:1.5em;margin:10px;}
+/****** Style Star Rating Widget *****/
+#rating{
+  border:none;
+  float:left;
+}
+#rating>input{
+  display:none;
+}
+/*ẩn input radio - vì chúng ta đã có label là GUI*/
+#rating>label:before{
+  margin:5px;
+  font-size:1.25em;
+  display:inline-block;
+  content:'★ ';}/*1 ngôi sao*/
+#rating>label{
+  color:#ddd;
+  float:right;}/*float:right để lật ngược các ngôi sao lại đúng theo thứ tự trong thực tế*/
+/*thêm màu cho sao đã chọn và các ngôi sao phía trước*/
+#rating>input:checked~label,
+#rating:not(:checked)>label:hover, 
+#rating:not(:checked)>label:hover~label{
+  color:#FFD700;
+}
+/* Hover vào các sao phía trước ngôi sao đã chọn*/
+#rating>input:checked+label:hover,
+#rating>input:checked~label:hover,
+#rating>label:hover~input:checked~label,
+#rating>input:checked~label:hover~label{
+  color:#FFED85;
+}
+.productStar
+{
+  font-size: x-large;
+}
+
+.MultiCarousel 
+{
+    float: left;
+    overflow: hidden; 
+    padding: 15px;
+    width: 100%;
+    position:relative;
+}
+.MultiCarousel .MultiCarousel-inner 
+{ 
+    transition: 1s ease all; 
+    float: left; 
+}
+.MultiCarousel .MultiCarousel-inner .item 
+{
+        float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item > div 
+{ 
+    text-align: center; 
+}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst 
+{ 
+    position:absolute; 
+    border-radius:50%;
+    top:calc(50% - 20px); 
+}
+.MultiCarousel .leftLst 
+{ 
+    left:0; 
+    }
+.MultiCarousel .rightLst 
+{ 
+    right:0;
+}
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over 
+{ 
+    pointer-events: none; 
+}
+
+.comparetable table{
+  width: 100%;
+}
+.tdDetail
+{
+  font-weight: bold;
+}
+td{
+  border-color: teal;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.brandLink
+{
+  font-size: 40px;
+}
+.sort
+  {
+    float:right;
+  }
+@media (max-width: 768px) {
+  .search
+  {
+    float: none;
+  }
+  .sort
+  {
+    float:none;
+  }
+  .headrow
+{
+  text-align: center;
+}
+}
